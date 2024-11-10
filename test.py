@@ -10,7 +10,7 @@ st.title('Hand Gesture Recognition')
 
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
-classifier = Classifier("/path/to/keras_model.h5", "/path/to/labels.txt")
+classifier = Classifier("keras_model.h5", "labels.txt")
 offset = 20
 imgSize = 300
 labels = ["Hello", "I Love You", "Thanks", "Sick", "Okay", "Hurt", "Help", "Washroom", "Angry", "Play", "Home", "You", "No", "Yes", "GoodMorning", "GoodNight", "Book", "Beautiful", "Cute", "Water", "Sleep", "Mother", "School", "Where", "Ugly", "Worst", "Failure", "Victory"]
